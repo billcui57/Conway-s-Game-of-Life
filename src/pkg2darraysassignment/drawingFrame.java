@@ -16,6 +16,8 @@ public class drawingFrame extends javax.swing.JFrame {
      */
     public drawingFrame() {
         initComponents();
+        drawingPanel1.timer();
+        drawingPanel1.t1.start();
     }
 
     /**

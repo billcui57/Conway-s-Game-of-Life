@@ -5,6 +5,11 @@
  */
 package pkg2darraysassignment;
 
+import java.awt.Graphics;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.Timer;
+
 /**
  *
  * @author 348848128
@@ -14,9 +19,41 @@ public class drawingPanel extends javax.swing.JPanel {
     /**
      * Creates new form drawingPanel
      */
+    
+    CGame game = new CGame();
+    
+    boolean[][]grid = game.grid;
     public drawingPanel() {
         initComponents();
+        game.initializeGrid(grid);
+        game.grid[3][2]=true;
+        game.grid[4][2]=true;
+        game.grid[5][2]=true;
     }
+    
+    public void paintComponent(Graphics g){
+        game.updateGrid(grid);
+        
+        for(){
+            //draw
+        }
+    }
+    
+    Timer t1;
+
+    public void timer() {
+        t1 = new Timer(30, new TimerListener());
+    }
+
+    private class TimerListener implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            drawingPanel.super.repaint();
+
+        }
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.

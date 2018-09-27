@@ -5,6 +5,7 @@
  */
 package pkg2darraysassignment;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -21,28 +22,51 @@ public class drawingPanel extends javax.swing.JPanel {
      */
     
     CGame game = new CGame();
+    int rows=100;
+    int cols=100;
     
-    boolean[][]grid = game.grid;
+    
     public drawingPanel() {
         initComponents();
-        game.initializeGrid(grid);
-        game.grid[3][2]=true;
-        game.grid[4][2]=true;
-        game.grid[5][2]=true;
+        game.initializeGrid(rows,cols);
+        
     }
     
+    int boxHeight = 10;
+    int boxWidth = 10;
+    
+    boolean update = false;
+    
+    
+  
     public void paintComponent(Graphics g){
-        game.updateGrid(grid);
+        super.paintComponent(g);
         
-        for(){
-            //draw
+        
+        for(int y=0;y<game.grid.length;y++){
+            for(int x=0;x<game.grid[0].length;x++){
+                if(game.grid[y][x]==true){
+                    g.setColor(Color.black);
+                    g.fillRect(x *boxWidth,y * boxHeight , (x * boxWidth) + boxWidth ,(y * boxHeight) + boxHeight);
+                   
+                    
+                }else if(game.grid[y][x]==false){
+                    g.setColor(Color.gray);
+                     g.fillRect(x *boxWidth,y * boxHeight , (x * boxWidth) + boxWidth ,(y * boxHeight) + boxHeight);
+                }
+            }
+        }
+        
+        if(update){
+        game.grid = game.updateGrid(rows,cols);
+        update=false;
         }
     }
     
     Timer t1;
 
     public void timer() {
-        t1 = new Timer(30, new TimerListener());
+        t1 = new Timer(100, new TimerListener());
     }
 
     private class TimerListener implements ActionListener {

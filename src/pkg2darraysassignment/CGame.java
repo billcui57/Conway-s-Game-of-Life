@@ -13,9 +13,10 @@ import java.util.Scanner;
  */
 public class CGame {
 
-    boolean[][] grid = new boolean[10][20];
+   boolean[][]grid;
 
-    public static void initializeGrid(boolean[][] grid) {
+    public  void initializeGrid(int rows, int cols) {
+        grid=new boolean[rows][cols];
         for (int y = 0; y < grid.length; y++) {
             for (int x = 0; x < grid[0].length; x++) {
                 grid[y][x] = false;
@@ -23,8 +24,8 @@ public class CGame {
         }
     }
 
-    public static void updateGrid(boolean[][] grid) {
-        boolean[][] newGrid = new boolean[10][20];
+    public boolean[][] updateGrid(int rows, int cols) {
+        boolean[][] newGrid = new boolean[rows][cols];
         for (int y = 0; y < grid.length; y++) {
             for (int x = 0; x < grid.length; x++) {
                 newGrid[y][x] = grid[y][x];
@@ -34,7 +35,7 @@ public class CGame {
         for (int y = 0; y < grid.length; y++) {
             for (int x = 0; x < grid[0].length; x++) {
 
-                int neighbours = numNeighbours(grid, y, x);
+                int neighbours = numNeighbours( y, x);
                 if (neighbours < 2) {
                     newGrid[y][x] = false;
                 } else if (neighbours > 3) {
@@ -46,10 +47,10 @@ public class CGame {
         }
 
         grid = newGrid;
-
+        return grid;
     }
 
-    public static int numNeighbours(boolean[][] grid, int row, int col) {
+    public int numNeighbours( int row, int col) {
         int numNeighbour = 0;
         try {
             for (int y = -1; y < 2; y++) {
@@ -69,7 +70,7 @@ public class CGame {
         return numNeighbour;
     }
 
-    public static void textDisplay(boolean[][] grid) {
+    public void textDisplay(boolean[][] grid) {
         for (int y = 0; y < grid.length; y++) {
             for (int x = 0; x < grid[0].length; x++) {
                 if (grid[y][x] == true) {

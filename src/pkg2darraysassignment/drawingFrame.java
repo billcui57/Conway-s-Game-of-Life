@@ -32,6 +32,17 @@ public class drawingFrame extends javax.swing.JFrame {
         drawingPanel1 = new pkg2darraysassignment.drawingPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                formKeyPressed(evt);
+            }
+        });
+
+        drawingPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                drawingPanel1MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout drawingPanel1Layout = new javax.swing.GroupLayout(drawingPanel1);
         drawingPanel1.setLayout(drawingPanel1Layout);
@@ -64,6 +75,35 @@ public class drawingFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
+        // TODO add your handling code here:
+        drawingPanel1.update=true;
+        drawingPanel1.repaint();
+        
+       
+       drawingPanel1.t1.stop();
+       
+    }//GEN-LAST:event_formKeyPressed
+
+    private void drawingPanel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_drawingPanel1MouseClicked
+        // TODO add your handling code here:
+       drawingPanel1.update=false;
+        int row = (evt.getY() /drawingPanel1.boxHeight);
+        int col = (evt.getX() /drawingPanel1.boxWidth );
+        try{
+            if(drawingPanel1.game.grid[row][col]==true){
+                drawingPanel1.game.grid[row][col]=false;
+            }else{
+                drawingPanel1.game.grid[row][col]=true;
+            }
+        }catch(ArrayIndexOutOfBoundsException exception){
+            
+        }
+        drawingPanel1.t1.stop();
+       drawingPanel1.repaint();
+    }//GEN-LAST:event_drawingPanel1MouseClicked
+
+    
     /**
      * @param args the command line arguments
      */

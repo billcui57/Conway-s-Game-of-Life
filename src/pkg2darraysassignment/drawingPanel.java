@@ -35,13 +35,18 @@ public class drawingPanel extends javax.swing.JPanel {
     int boxHeight = 10;
     int boxWidth = 10;
     
-    boolean update = false;
+    boolean update = true;
     
     
   
+    @Override
     public void paintComponent(Graphics g){
         super.paintComponent(g);
         
+        if(update){
+        game.grid = game.updateGrid(rows,cols);
+        
+        }
         
         for(int y=0;y<game.grid.length;y++){
             for(int x=0;x<game.grid[0].length;x++){
@@ -57,10 +62,7 @@ public class drawingPanel extends javax.swing.JPanel {
             }
         }
         
-        if(update){
-        game.grid = game.updateGrid(rows,cols);
-        update=false;
-        }
+        
     }
     
     Timer t1;

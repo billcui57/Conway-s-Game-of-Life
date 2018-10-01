@@ -25,9 +25,10 @@ public class CGame {
     }
 
     public boolean[][] updateGrid(int rows, int cols) {
+       
         boolean[][] newGrid = new boolean[rows][cols];
         for (int y = 0; y < grid.length; y++) {
-            for (int x = 0; x < grid.length; x++) {
+            for (int x = 0; x < grid[0].length; x++) {
                 newGrid[y][x] = grid[y][x];
             }
         }
@@ -47,6 +48,8 @@ public class CGame {
         }
 
         grid = newGrid;
+        
+        
         return grid;
     }
 
@@ -70,6 +73,30 @@ public class CGame {
         return numNeighbour;
     }
 
+    public void clearGrid(int row,int col){
+        for(int y=0;y<row;y++){
+            for(int x=0;x<col;x++){
+                grid[y][x]=false;
+            }
+        }
+    }
+    
+    public void preset1(int row,int col){
+        for(int y=0;y<row;y++){
+            grid[y][(int)col/2]=true;
+        }
+        for(int x=0;x<col;x++){
+            grid[(int)row/2][x]=true;
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     public void textDisplay(boolean[][] grid) {
         for (int y = 0; y < grid.length; y++) {
             for (int x = 0; x < grid[0].length; x++) {

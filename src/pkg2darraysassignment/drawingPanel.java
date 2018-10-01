@@ -22,8 +22,10 @@ public class drawingPanel extends javax.swing.JPanel {
      */
     
     CGame game = new CGame();
-    int rows=100;
-    int cols=100;
+    int boxHeight = 10;
+    int boxWidth = 10;
+    int rows=800/10;
+    int cols=600/10;
     
     
     public drawingPanel() {
@@ -32,12 +34,17 @@ public class drawingPanel extends javax.swing.JPanel {
         
     }
     
-    int boxHeight = 10;
-    int boxWidth = 10;
+    
     
     boolean update = true;
     
+    int cellRed=255;
+    int cellGreen=255;
+    int cellBlue=255;
     
+    int backRed=0;
+    int backGreen=0;
+    int backBlue=0;
   
     @Override
     public void paintComponent(Graphics g){
@@ -51,12 +58,12 @@ public class drawingPanel extends javax.swing.JPanel {
         for(int y=0;y<game.grid.length;y++){
             for(int x=0;x<game.grid[0].length;x++){
                 if(game.grid[y][x]==true){
-                    g.setColor(Color.black);
+                    g.setColor(new Color(cellRed,cellGreen,cellBlue));
                     g.fillRect(x *boxWidth,y * boxHeight , (x * boxWidth) + boxWidth ,(y * boxHeight) + boxHeight);
                    
                     
                 }else if(game.grid[y][x]==false){
-                    g.setColor(Color.gray);
+                    g.setColor(new Color(backRed,backGreen,backBlue));
                      g.fillRect(x *boxWidth,y * boxHeight , (x * boxWidth) + boxWidth ,(y * boxHeight) + boxHeight);
                 }
             }

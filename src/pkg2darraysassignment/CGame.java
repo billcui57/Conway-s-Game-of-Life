@@ -90,6 +90,21 @@ public class CGame {
         }
     }
     
+    public void preset2(int row,int col){
+        grid[row/2][col/2]=true;
+        grid[row/2][col/2+1]=true;
+        grid[row/2][col/2+2]=true;
+        grid[row/2][col/2+4]=true;
+        grid[row/2+1][col/2]=true;
+        grid[row/2+2][col/2+3]=true;
+        grid[row/2+2][col/2+4]=true;
+        grid[row/2+3][col/2+1]=true;
+        grid[row/2+3][col/2+2]=true;
+        grid[row/2+3][col/2+4]=true;
+        grid[row/2+4][col/2]=true;
+        grid[row/2+4][col/2+2]=true;
+        grid[row/2+4][col/2+4]=true;
+    }
     
     
     

@@ -20,58 +20,64 @@ public class drawingPanel extends javax.swing.JPanel {
     /**
      * Creates new form drawingPanel
      */
-    
     CGame game = new CGame();
     int boxHeight = 10;
     int boxWidth = 10;
-    int rows=800/10;
-    int cols=600/10;
-    
-    
+    int rows;
+    int cols;
+
     public drawingPanel() {
         initComponents();
-        game.initializeGrid(rows,cols);
-        
+        game.initializeGrid(rows, cols);
+
     }
-    
-    
-    
+
     boolean update = true;
-    
-    int cellRed=255;
-    int cellGreen=255;
-    int cellBlue=255;
-    
-    int backRed=0;
-    int backGreen=0;
-    int backBlue=0;
-  
+
+    int cellRed = 255;
+    int cellGreen = 255;
+    int cellBlue = 255;
+
+    int backRed = 0;
+    int backGreen = 0;
+    int backBlue = 0;
+int scene = 1;
     @Override
-    public void paintComponent(Graphics g){
+    public void paintComponent(Graphics g) {
         super.paintComponent(g);
         
-        if(update){
-        game.grid = game.updateGrid(rows,cols);
-        
-        }
-        
-        for(int y=0;y<game.grid.length;y++){
-            for(int x=0;x<game.grid[0].length;x++){
-                if(game.grid[y][x]==true){
-                    g.setColor(new Color(cellRed,cellGreen,cellBlue));
-                    g.fillRect(x *boxWidth,y * boxHeight , (x * boxWidth) + boxWidth ,(y * boxHeight) + boxHeight);
-                   
-                    
-                }else if(game.grid[y][x]==false){
-                    g.setColor(new Color(backRed,backGreen,backBlue));
-                     g.fillRect(x *boxWidth,y * boxHeight , (x * boxWidth) + boxWidth ,(y * boxHeight) + boxHeight);
+        switch (scene) {
+            case 1:
+                
+                
+                
+                
+                break;
+            case 2:
+
+                if (update) {
+                    game.grid = game.updateGrid(rows, cols);
+
                 }
-            }
+
+                for (int y = 0; y < game.grid.length; y++) {
+                    for (int x = 0; x < game.grid[0].length; x++) {
+                        if (game.grid[y][x] == true) {
+                            g.setColor(new Color(cellRed, cellGreen, cellBlue));
+                            g.fillRect(x * boxWidth, y * boxHeight, (x * boxWidth) + boxWidth, (y * boxHeight) + boxHeight);
+
+                        } else if (game.grid[y][x] == false) {
+                            g.setColor(new Color(backRed, backGreen, backBlue));
+                            g.fillRect(x * boxWidth, y * boxHeight, (x * boxWidth) + boxWidth, (y * boxHeight) + boxHeight);
+                        }
+                    }
+                }
+
+                break;
         }
-        
-        
+
     }
-    
+
     Timer t1;
 
     public void timer() {
@@ -86,7 +92,6 @@ public class drawingPanel extends javax.swing.JPanel {
 
         }
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.

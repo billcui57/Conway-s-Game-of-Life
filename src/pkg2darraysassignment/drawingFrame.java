@@ -53,6 +53,11 @@ public class drawingFrame extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jButton6 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addKeyListener(new java.awt.event.KeyAdapter() {
@@ -79,6 +84,8 @@ public class drawingFrame extends javax.swing.JFrame {
             .addGap(0, 778, Short.MAX_VALUE)
         );
 
+        jButton1.setVisible(false);
+        jButton1.setFocusable(true);
         jButton1.setText("Single Step");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,6 +93,8 @@ public class drawingFrame extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setVisible(false);
+        jButton2.setFocusable(true);
         jButton2.setText("Toggle Auto Step");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,62 +102,93 @@ public class drawingFrame extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setVisible(false);
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Game of Life is running, turn off auto step to make edits");
 
+        jSlider1.setVisible(false);
+        jSlider1.setFocusable(true);
         jSlider1.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 jSlider1StateChanged(evt);
             }
         });
 
+        jSlider2.setVisible(false);
+        jSlider2.setFocusable(true);
         jSlider2.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 jSlider2StateChanged(evt);
             }
         });
 
+        jSlider3.setVisible(false);
+        jSlider3.setFocusable(true);
         jSlider3.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 jSlider3StateChanged(evt);
             }
         });
 
+        jLabel2.setVisible(false);
+        jLabel2.setFocusable(true);
         jLabel2.setText("Red");
 
+        jLabel3.setVisible(false);
+        jLabel3.setFocusable(true);
         jLabel3.setText("Green");
 
+        jLabel4.setVisible(false);
+        jLabel4.setFocusable(true);
         jLabel4.setText("Blue");
 
+        jLabel5.setVisible(false);
+        jLabel5.setFocusable(true);
         jLabel5.setText("Background Color");
 
+        jLabel6.setVisible(false);
+        jLabel6.setFocusable(true);
         jLabel6.setText("Cell Color");
 
+        jSlider4.setVisible(false);
+        jSlider4.setFocusable(true);
         jSlider4.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 jSlider4StateChanged(evt);
             }
         });
 
+        jSlider5.setVisible(false);
+        jSlider5.setFocusable(true);
         jSlider5.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 jSlider5StateChanged(evt);
             }
         });
 
+        jSlider6.setVisible(false);
+        jSlider6.setFocusable(true);
         jSlider6.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 jSlider6StateChanged(evt);
             }
         });
 
+        jLabel7.setVisible(false);
+        jLabel7.setFocusable(true);
         jLabel7.setText("Red");
 
+        jLabel8.setVisible(false);
+        jLabel8.setFocusable(true);
         jLabel8.setText("Green");
 
+        jLabel9.setVisible(false);
+        jLabel9.setFocusable(true);
         jLabel9.setText("Blue");
 
+        jButton3.setVisible(false);
+        jButton3.setFocusable(true);
         jButton3.setText("Preset 1");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -156,6 +196,8 @@ public class drawingFrame extends javax.swing.JFrame {
             }
         });
 
+        jButton4.setVisible(false);
+        jButton4.setFocusable(true);
         jButton4.setText("Clear Screen");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -163,6 +205,8 @@ public class drawingFrame extends javax.swing.JFrame {
             }
         });
 
+        jButton5.setVisible(false);
+        jButton5.setFocusable(true);
         jButton5.setText("Preset 2");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -170,9 +214,38 @@ public class drawingFrame extends javax.swing.JFrame {
             }
         });
 
+        jLabel10.setVisible(false);
+        jLabel10.setFocusable(true);
         jLabel10.setText("+ formation");
 
+        jLabel11.setVisible(false);
+        jLabel11.setFocusable(true);
         jLabel11.setText("Infinite Growth");
+
+        jLabel12.setText("Columns");
+
+        jLabel13.setText("Rows");
+
+        jTextField1.setText("jTextField1");
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField1KeyPressed(evt);
+            }
+        });
+
+        jTextField2.setText("jTextField2");
+        jTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jTextField2KeyReleased(evt);
+            }
+        });
+
+        jButton6.setText("Start");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -198,7 +271,7 @@ public class drawingFrame extends javax.swing.JFrame {
                                 .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 376, Short.MAX_VALUE)))
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(jLabel5)
@@ -210,7 +283,9 @@ public class drawingFrame extends javax.swing.JFrame {
                                     .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING))
+                                    .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jSlider2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -218,7 +293,12 @@ public class drawingFrame extends javax.swing.JFrame {
                                     .addComponent(jSlider3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jSlider4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jSlider5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jSlider6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jSlider6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jButton6))
+                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(94, 94, 94))))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -248,7 +328,16 @@ public class drawingFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(70, 70, 70)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton6))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton2)
@@ -304,8 +393,8 @@ public class drawingFrame extends javax.swing.JFrame {
 
     private void drawingPanel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_drawingPanel1MouseClicked
         // TODO add your handling code here:
-       
-        int row = (evt.getY() /drawingPanel1.boxHeight);
+       if(drawingPanel1.scene==2){
+            int row = (evt.getY() /drawingPanel1.boxHeight);
         int col = (evt.getX() /drawingPanel1.boxWidth );
         try{
             if(drawingPanel1.game.grid[row][col]==true){
@@ -316,12 +405,18 @@ public class drawingFrame extends javax.swing.JFrame {
         }catch(ArrayIndexOutOfBoundsException exception){
             
         }
+        drawingPanel1.update=false;
         
        drawingPanel1.repaint();
+       }
+          
+        
+       
     }//GEN-LAST:event_drawingPanel1MouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        
          drawingPanel1.update=true;
         drawingPanel1.repaint();
         
@@ -331,6 +426,10 @@ public class drawingFrame extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        
+        
+        
+        
         if(drawingPanel1.t1.isRunning()){
             drawingPanel1.t1.stop();
             drawingPanel1.update=false;
@@ -344,6 +443,8 @@ public class drawingFrame extends javax.swing.JFrame {
 
     private void jSlider1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider1StateChanged
         // TODO add your handling code here:
+        
+        
         drawingPanel1.backRed=jSlider1.getValue();
         drawingPanel1.update=false;
         drawingPanel1.t1.start();
@@ -351,6 +452,9 @@ public class drawingFrame extends javax.swing.JFrame {
 
     private void jSlider2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider2StateChanged
         // TODO add your handling code here:
+        
+        
+        
         drawingPanel1.backGreen=jSlider2.getValue();
         drawingPanel1.update=false;
         drawingPanel1.t1.start();
@@ -358,6 +462,9 @@ public class drawingFrame extends javax.swing.JFrame {
 
     private void jSlider3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider3StateChanged
         // TODO add your handling code here:
+        
+       
+        
         drawingPanel1.backBlue=jSlider3.getValue();
         drawingPanel1.update=false;
         drawingPanel1.t1.start();
@@ -365,6 +472,9 @@ public class drawingFrame extends javax.swing.JFrame {
 
     private void jSlider4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider4StateChanged
         // TODO add your handling code here:
+        
+       
+       
         drawingPanel1.cellRed=jSlider4.getValue();
         drawingPanel1.update=false;
         drawingPanel1.t1.start();
@@ -372,6 +482,8 @@ public class drawingFrame extends javax.swing.JFrame {
 
     private void jSlider5StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider5StateChanged
         // TODO add your handling code here:
+       
+        
         drawingPanel1.cellGreen=jSlider5.getValue();
         drawingPanel1.update=false;
         drawingPanel1.t1.start();
@@ -379,6 +491,8 @@ public class drawingFrame extends javax.swing.JFrame {
 
     private void jSlider6StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider6StateChanged
         // TODO add your handling code here:
+        
+        
         drawingPanel1.cellBlue=jSlider6.getValue();
         drawingPanel1.update=false;
         drawingPanel1.t1.start();
@@ -386,6 +500,9 @@ public class drawingFrame extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+      
+        
+        
         drawingPanel1.game.clearGrid(drawingPanel1.rows, drawingPanel1.cols);
         drawingPanel1.update=false;
         jLabel1.setText("Game of Life is off, turn on auto step to view process");
@@ -395,6 +512,8 @@ public class drawingFrame extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        
+        
         drawingPanel1.game.clearGrid(drawingPanel1.rows, drawingPanel1.cols);
         drawingPanel1.update=false;
         jLabel1.setText("Game of Life is off, turn on auto step to view process");
@@ -404,12 +523,31 @@ public class drawingFrame extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+        
+      
+        
         drawingPanel1.game.clearGrid(drawingPanel1.rows, drawingPanel1.cols);
         drawingPanel1.update=false;
         jLabel1.setText("Game of Life is off, turn on auto step to view process");
         drawingPanel1.game.preset2(drawingPanel1.rows, drawingPanel1.cols);
         drawingPanel1.t1.start();
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
+        // TODO add your handling code here:
+        drawingPanel1.cols=Integer.parseInt(jTextField1.getText());
+    }//GEN-LAST:event_jTextField1KeyPressed
+
+    private void jTextField2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyReleased
+        // TODO add your handling code here:
+        drawingPanel1.rows=Integer.parseInt(jTextField2.getText());
+    }//GEN-LAST:event_jTextField2KeyReleased
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        drawingPanel1.scene=2;
+        
+    }//GEN-LAST:event_jButton6ActionPerformed
 
     
     /**
@@ -454,9 +592,12 @@ public class drawingFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -471,5 +612,7 @@ public class drawingFrame extends javax.swing.JFrame {
     private javax.swing.JSlider jSlider4;
     private javax.swing.JSlider jSlider5;
     private javax.swing.JSlider jSlider6;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }

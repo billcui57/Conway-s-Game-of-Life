@@ -45,6 +45,9 @@ public class drawingPanel extends javax.swing.JPanel {
     int scene = 1;
 
     @Override
+    /**
+     * paints the grid out and updates the grid through each loop
+     */
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
 

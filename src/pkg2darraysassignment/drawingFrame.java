@@ -393,11 +393,7 @@ public class drawingFrame extends javax.swing.JFrame {
 
     
     
-    /**
-     * 
-     * @param evt mouse click event
-     * toggles the row and column corresponding the mouse press to alive or dead
-     */
+    
     private void drawingPanel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_drawingPanel1MouseClicked
         // TODO add your handling code here:
         if (drawingPanel1.scene == 2) {
@@ -422,11 +418,7 @@ public class drawingFrame extends javax.swing.JFrame {
 
     }//GEN-LAST:event_drawingPanel1MouseClicked
 
-    /**
-     * 
-     * @param evt button press event
-     *  proceeds game by 1 turn
-     */
+    
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
 
@@ -437,11 +429,7 @@ public class drawingFrame extends javax.swing.JFrame {
         drawingPanel1.t1.stop();
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    /**
-     * 
-     * @param evt button press event
-     *  toggles for the game to go on automatically or not
-     */
+   
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
 
@@ -457,11 +445,7 @@ public class drawingFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    /**
-     * 
-     * @param evt slider event
-     * changes background red value
-     */
+    
     private void jSlider1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider1StateChanged
         // TODO add your handling code here:
 
@@ -471,11 +455,7 @@ public class drawingFrame extends javax.swing.JFrame {
         drawingPanel1.t1.start();
     }//GEN-LAST:event_jSlider1StateChanged
 
-     /**
-     * 
-     * @param evt slider event
-     * changes background green value
-     */
+     
     private void jSlider2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider2StateChanged
         // TODO add your handling code here:
         //changes background green value
@@ -484,11 +464,7 @@ public class drawingFrame extends javax.swing.JFrame {
         drawingPanel1.t1.start();
     }//GEN-LAST:event_jSlider2StateChanged
 
-     /**
-     * 
-     * @param evt slider event
-     * changes background blue value
-     */
+     
     private void jSlider3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider3StateChanged
         // TODO add your handling code here:
         //changes background blue value
@@ -497,11 +473,7 @@ public class drawingFrame extends javax.swing.JFrame {
         drawingPanel1.t1.start();
     }//GEN-LAST:event_jSlider3StateChanged
 
-     /**
-     * 
-     * @param evt slider event
-     * changes cell red value
-     */
+     
     private void jSlider4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider4StateChanged
         // TODO add your handling code here:
         //changes cell red value
@@ -510,11 +482,7 @@ public class drawingFrame extends javax.swing.JFrame {
         drawingPanel1.t1.start();
     }//GEN-LAST:event_jSlider4StateChanged
 
-    /**
-     * 
-     * @param evt slider event
-     * changes cell green value
-     */
+    
     private void jSlider5StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider5StateChanged
         // TODO add your handling code here:
         //changes cell green value
@@ -523,11 +491,7 @@ public class drawingFrame extends javax.swing.JFrame {
         drawingPanel1.t1.start();
     }//GEN-LAST:event_jSlider5StateChanged
 
-    /**
-     * 
-     * @param evt slider event
-     * changes cell blue value
-     */
+    
     private void jSlider6StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider6StateChanged
         // TODO add your handling code here:
         // changes cell blue value
@@ -536,11 +500,7 @@ public class drawingFrame extends javax.swing.JFrame {
         drawingPanel1.t1.start();
     }//GEN-LAST:event_jSlider6StateChanged
 
-    /**
-     * 
-     * @param evt button event
-     * changes grid to + shape preset
-     */
+   
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         //changes grid to + shape preset
@@ -552,11 +512,7 @@ public class drawingFrame extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    /**
-     * 
-     * @param evt button event
-     * clears grid
-     */
+    
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         //clears grid
@@ -567,11 +523,7 @@ public class drawingFrame extends javax.swing.JFrame {
         drawingPanel1.t1.start();
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    /**
-     * 
-     * @param evt button event
-     * changes grid to infinite growth preset
-     */
+   
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         //changes grid to infinite growth preset
@@ -582,11 +534,7 @@ public class drawingFrame extends javax.swing.JFrame {
         drawingPanel1.t1.start();
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    /**
-     * 
-     * @param evt key pressed event
-     * user input sets the column number of the grid
-     */
+    
     private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
         // TODO add your handling code here:
         //user input sets the column number of the grid
@@ -600,11 +548,7 @@ public class drawingFrame extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jTextField1KeyPressed
 
-    /**
-     * 
-     * @param evt key pressed event
-     * user input sets the row number of the grid
-     */
+    
     private void jTextField2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyReleased
         // TODO add your handling code here:
         //user input sets the row number of the grid
@@ -616,11 +560,7 @@ public class drawingFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jTextField2KeyReleased
 
-    /**
-     * 
-     * @param evt button event
-     *  user finishes grid setup and proceeds to game of life
-     */
+    
     
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:

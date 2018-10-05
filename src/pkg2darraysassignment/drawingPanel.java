@@ -89,7 +89,7 @@ public class drawingPanel extends javax.swing.JPanel {
     Timer t1;
 
     /**
-     * timer
+     * timer method that refreshes grid every 100 milliseconds
      */
     public void timer() {
         t1 = new Timer(100, new TimerListener());

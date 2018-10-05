@@ -18,6 +18,7 @@ public class drawingFrame extends javax.swing.JFrame {
         initComponents();
         drawingPanel1.timer();
         drawingPanel1.t1.start();
+        //sets to fullscreen
        this.setExtendedState( this.MAXIMIZED_BOTH); 
 
 
@@ -271,54 +272,52 @@ public class drawingFrame extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(277, 277, 277)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jSlider4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jSlider5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jSlider6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addComponent(jButton4)
-                                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(jLabel10)
-                                                        .addComponent(jButton3)))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jButton5))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGap(109, 109, 109)
-                                                .addComponent(jLabel11))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGap(79, 79, 79)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jSlider4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jSlider5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jSlider6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(jButton4)
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addGroup(layout.createSequentialGroup()
-                                                        .addGap(16, 16, 16)
-                                                        .addComponent(jButton1))
-                                                    .addComponent(jButton2)))))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jSlider2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jSlider3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jLabel5)
-                                                .addGap(54, 54, 54)))
-                                        .addGap(5, 5, 5)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                                    .addComponent(jLabel10)
+                                                    .addComponent(jButton3)))
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(jButton5))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGap(109, 109, 109)
+                                            .addComponent(jLabel11))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGap(79, 79, 79)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addGroup(layout.createSequentialGroup()
+                                                    .addGap(16, 16, 16)
+                                                    .addComponent(jButton1))
+                                                .addComponent(jButton2)))))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING))
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(jSlider2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(jSlider3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel5)
+                                            .addGap(54, 54, 54)))
+                                    .addGap(5, 5, 5)))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(jLabel6)
@@ -334,10 +333,11 @@ public class drawingFrame extends javax.swing.JFrame {
                 .addGap(26, 26, 26)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel12)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton6)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
@@ -401,8 +401,10 @@ public class drawingFrame extends javax.swing.JFrame {
     private void drawingPanel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_drawingPanel1MouseClicked
         // TODO add your handling code here:
         if (drawingPanel1.scene == 2) {
+            //gets the x and y coordinate of the mouse click and translates it to rows and cols
             int row = (evt.getY() / drawingPanel1.boxHeight);
             int col = (evt.getX() / drawingPanel1.boxWidth);
+            //toggles alive and dead
             try {
                 if (drawingPanel1.game.grid[row][col] == true) {
                     drawingPanel1.game.grid[row][col] = false;
@@ -428,6 +430,7 @@ public class drawingFrame extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
 
+        //updates game once
         drawingPanel1.update = true;
         drawingPanel1.repaint();
 
@@ -442,6 +445,7 @@ public class drawingFrame extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
 
+        //if the game is running, then stop the timer and stop updating, if not then start the timer and start updating
         if (drawingPanel1.t1.isRunning()) {
             drawingPanel1.t1.stop();
             drawingPanel1.update = false;
@@ -461,6 +465,7 @@ public class drawingFrame extends javax.swing.JFrame {
     private void jSlider1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider1StateChanged
         // TODO add your handling code here:
 
+        //changes background red value
         drawingPanel1.backRed = jSlider1.getValue();
         drawingPanel1.update = false;
         drawingPanel1.t1.start();
@@ -473,7 +478,7 @@ public class drawingFrame extends javax.swing.JFrame {
      */
     private void jSlider2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider2StateChanged
         // TODO add your handling code here:
-
+        //changes background green value
         drawingPanel1.backGreen = jSlider2.getValue();
         drawingPanel1.update = false;
         drawingPanel1.t1.start();
@@ -486,7 +491,7 @@ public class drawingFrame extends javax.swing.JFrame {
      */
     private void jSlider3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider3StateChanged
         // TODO add your handling code here:
-
+        //changes background blue value
         drawingPanel1.backBlue = jSlider3.getValue();
         drawingPanel1.update = false;
         drawingPanel1.t1.start();
@@ -499,7 +504,7 @@ public class drawingFrame extends javax.swing.JFrame {
      */
     private void jSlider4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider4StateChanged
         // TODO add your handling code here:
-
+        //changes cell red value
         drawingPanel1.cellRed = jSlider4.getValue();
         drawingPanel1.update = false;
         drawingPanel1.t1.start();
@@ -512,7 +517,7 @@ public class drawingFrame extends javax.swing.JFrame {
      */
     private void jSlider5StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider5StateChanged
         // TODO add your handling code here:
-
+        //changes cell green value
         drawingPanel1.cellGreen = jSlider5.getValue();
         drawingPanel1.update = false;
         drawingPanel1.t1.start();
@@ -525,7 +530,7 @@ public class drawingFrame extends javax.swing.JFrame {
      */
     private void jSlider6StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider6StateChanged
         // TODO add your handling code here:
-
+        // changes cell blue value
         drawingPanel1.cellBlue = jSlider6.getValue();
         drawingPanel1.update = false;
         drawingPanel1.t1.start();
@@ -538,7 +543,7 @@ public class drawingFrame extends javax.swing.JFrame {
      */
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-
+        //changes grid to + shape preset
         drawingPanel1.game.clearGrid(drawingPanel1.rows, drawingPanel1.cols);
         
         jLabel1.setText("Game of Life is off, turn on auto step to view process");
@@ -554,7 +559,7 @@ public class drawingFrame extends javax.swing.JFrame {
      */
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-
+        //clears grid
         drawingPanel1.game.clearGrid(drawingPanel1.rows, drawingPanel1.cols);
         drawingPanel1.update = false;
         jLabel1.setText("Game of Life is off, turn on auto step to view process");
@@ -569,7 +574,7 @@ public class drawingFrame extends javax.swing.JFrame {
      */
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-
+        //changes grid to infinite growth preset
         drawingPanel1.game.clearGrid(drawingPanel1.rows, drawingPanel1.cols);
         drawingPanel1.update = false;
         jLabel1.setText("Game of Life is off, turn on auto step to view process");
@@ -584,6 +589,7 @@ public class drawingFrame extends javax.swing.JFrame {
      */
     private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
         // TODO add your handling code here:
+        //user input sets the column number of the grid
         try {
             drawingPanel1.cols = Integer.parseInt(jTextField1.getText());
            
@@ -601,6 +607,7 @@ public class drawingFrame extends javax.swing.JFrame {
      */
     private void jTextField2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyReleased
         // TODO add your handling code here:
+        //user input sets the row number of the grid
         try {
             drawingPanel1.rows = Integer.parseInt(jTextField2.getText());
            
@@ -617,6 +624,7 @@ public class drawingFrame extends javax.swing.JFrame {
     
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
+        //sets all buttons from first scene to be invisible and toggles on all buttons in second scene
         drawingPanel1.scene = 2;
         jButton1.setVisible(true);
         jButton2.setVisible(true);
@@ -650,6 +658,7 @@ public class drawingFrame extends javax.swing.JFrame {
 
     private void jTextField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyReleased
         // TODO add your handling code here:
+        //same function as keypressed method above
          try {
             drawingPanel1.cols = Integer.parseInt(jTextField1.getText());
            
@@ -660,6 +669,7 @@ public class drawingFrame extends javax.swing.JFrame {
 
     private void jTextField2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyPressed
         // TODO add your handling code here:
+        //same function as keyreleased method above
          try {
             drawingPanel1.rows = Integer.parseInt(jTextField2.getText());
            

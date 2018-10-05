@@ -23,12 +23,13 @@ public class drawingPanel extends javax.swing.JPanel {
     CGame game = new CGame();
     int boxHeight = 10;
     int boxWidth = 10;
-    int rows;
-    int cols;
+    int rows = 0;
+    int cols = 0;
+
+    boolean initialize = true;
 
     public drawingPanel() {
         initComponents();
-        game.initializeGrid(rows, cols);
 
     }
 
@@ -41,25 +42,32 @@ public class drawingPanel extends javax.swing.JPanel {
     int backRed = 0;
     int backGreen = 0;
     int backBlue = 0;
-int scene = 1;
+    int scene = 1;
+
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
-        
+
+        //different scenes of display
         switch (scene) {
             case 1:
-                
-                
-                
-                
+                //setup display, game of life does not run
                 break;
             case 2:
+                //game of life
+                this.setBounds(0, 0, cols * boxWidth, rows * boxHeight);
+                if (initialize) {
+                    //initializes grid ONCE
+                    game.initializeGrid(rows, cols);
+                    initialize = false;
+                }
 
                 if (update) {
                     game.grid = game.updateGrid(rows, cols);
 
                 }
 
+                //colors grid according to dead and alive cells
                 for (int y = 0; y < game.grid.length; y++) {
                     for (int x = 0; x < game.grid[0].length; x++) {
                         if (game.grid[y][x] == true) {
@@ -80,6 +88,9 @@ int scene = 1;
 
     Timer t1;
 
+    /**
+     * timer
+     */
     public void timer() {
         t1 = new Timer(100, new TimerListener());
     }

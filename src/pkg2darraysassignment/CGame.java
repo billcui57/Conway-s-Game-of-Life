@@ -13,6 +13,37 @@ import java.util.Scanner;
  */
 public class CGame {
 
+    //Pseudocode
+    //First initialize a grid with specified size with all cells dead
+    //create another grid that is a duplicate of the reference grid that would be changed
+    
+    
+    //      loop through each cell in the grid
+                    // loop through a 3 by 3 area around that cell
+                            //if that cell in the area is alive, then increment neighbour count of that cell by 1
+                    // end loop
+                    
+                    // following if statements edit the new grid
+                    // if less then 2 or more than 3 neighbours, then dead
+                    // if cell is dead and has 3 neighbours exact, then respawn
+                    // if cell is alive and has 2 or 3 neighbours, then no change
+            //end loop
+            
+            //sets the reference grid as the same as the new grid
+           //loop through each cell in the old grid
+                //if the cell is alive, then draw it accordingly - (white box)
+                //else if the cell is dead, then draw it accordingly - (black box)
+           //end loop
+    //
+    
+    
+    
+    
+    
+    
+    
+    
+    
    boolean[][]grid;
 
    /**

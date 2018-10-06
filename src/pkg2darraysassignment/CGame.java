@@ -19,14 +19,15 @@ public class CGame {
     
     
     //      loop through each cell in the grid
+           //create integer variable neighbour
                     // loop through a 3 by 3 area around that cell
                             //if that cell in the area is alive, then increment neighbour count of that cell by 1
                     // end loop
                     
                     // following if statements edit the new grid
-                    // if less then 2 or more than 3 neighbours, then dead
-                    // if cell is dead and has 3 neighbours exact, then respawn
-                    // if cell is alive and has 2 or 3 neighbours, then no change
+                             // if less then 2 or more than 3 neighbours, then dead
+                             // if cell is dead and has 3 neighbours exact, then respawn
+                             // if cell is alive and has 2 or 3 neighbours, then no change
             //end loop
             
             //sets the reference grid as the same as the new grid
@@ -203,6 +204,7 @@ public class CGame {
      * basic console text display of the engine
      */
     public void textDisplay() {
+        //goes through array and if it is true then print out 1, if not then print out 0
         for (int y = 0; y < grid.length; y++) {
             for (int x = 0; x < grid[0].length; x++) {
                 if (grid[y][x] == true) {

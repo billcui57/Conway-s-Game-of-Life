@@ -505,7 +505,7 @@ public class drawingFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         //changes grid to + shape preset
         drawingPanel1.game.clearGrid(drawingPanel1.rows, drawingPanel1.cols);
-        
+        drawingPanel1.update = false;
         jLabel1.setText("Game of Life is off, turn on auto step to view process");
         drawingPanel1.game.preset1(drawingPanel1.rows, drawingPanel1.cols);
         drawingPanel1.t1.start();
